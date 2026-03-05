@@ -1,0 +1,238 @@
+acc_all: torch.Size([1728, 6, 2048])
+psd_all: torch.Size([1728, 6, 1025])
+selected for exc_label: [1, 2, 3] count: 1728
+device: cuda
+ckpt: /cluster/home/xudjian/CFMD/paper/results/timeseries_MCC5/model_v2_1.pt
+
+Count per excitation:
+exc 1: 560
+exc 2: 589
+exc 3: 579
+
+Count per damage:
+dmg 1: 220
+dmg 2: 227
+dmg 3: 218
+dmg 4: 218
+dmg 5: 206
+dmg 6: 218
+dmg 7: 213
+dmg 8: 208
+
+Count per (exc, dmg):
+exc 1, dmg 1: 72
+exc 2, dmg 1: 64
+exc 3, dmg 1: 84
+exc 1, dmg 2: 84
+exc 2, dmg 2: 74
+exc 3, dmg 2: 69
+exc 1, dmg 3: 75
+exc 2, dmg 3: 71
+exc 3, dmg 3: 72
+exc 1, dmg 4: 60
+exc 2, dmg 4: 81
+exc 3, dmg 4: 77
+exc 1, dmg 5: 62
+exc 2, dmg 5: 81
+exc 3, dmg 5: 63
+exc 1, dmg 6: 66
+exc 2, dmg 6: 72
+exc 3, dmg 6: 80
+exc 1, dmg 7: 68
+exc 2, dmg 7: 77
+exc 3, dmg 7: 68
+exc 1, dmg 8: 73
+exc 2, dmg 8: 69
+exc 3, dmg 8: 66
+input x: (1728, 6, 2048)
+reconstruction x_hat: (1728, 6, 2048)
+input psd: (1728, 6, 1025)
+reconstruction psd_hat: (1728, 6, 1025)
+embeddings z_ndmg: (1728, 128, 128)
+embeddings z_dmg: (1728, 128, 128)
+exc labels: (1728,) unique: [1 2 3]
+damage labels: (1728,) unique: [1 2 3 4 5 6 7 8]
+embeddings z_ndmg_tr: (2592, 128, 128)
+embeddings z_dmg_tr: (2592, 128, 128)
+Excitation 1, damage 3 normalized signals
+Figure(600x300)
+Figure(600x300)
+/cluster/home/xudjian/miniconda3/envs/CFMD/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+Figure(500x500)
+Figure(500x500)
+/cluster/home/xudjian/miniconda3/envs/CFMD/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+Figure(500x500)
+Figure(500x500)
+[z_dmg] baseline count (dmg_tr==1): 320 / 2592
+Figure(1000x600)
+Figure(600x600)
+[z_ndmg] baseline count (dmg_tr==1): 320 / 2592
+Figure(1000x600)
+Figure(600x600)
+involved excitation labels: [1, 2, 3]
+
+[z_dmg mahal] threshold (baseline p95): 18508.435546875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 209   11]
+ [1440   68]]
+TN=209  FP=11  FN=1440  TP=68
+Metrics (positive class = damaged):
+True negative rate          : 0.9500
+True positive rate          : 0.0451
+Accuracy          : 0.1603
+Balanced Accuracy          : 0.4975
+
+[z_ndmg mahal] threshold (baseline p95): 1489.66064453125
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 211    9]
+ [1402  106]]
+TN=211  FP=9  FN=1402  TP=106
+Metrics (positive class = damaged):
+True negative rate          : 0.9591
+True positive rate          : 0.0703
+Accuracy          : 0.1834
+Balanced Accuracy          : 0.5147
+[z_dmg] baseline count (dmg_tr==1): 116 / 851
+Figure(600x600)
+[z_ndmg] baseline count (dmg_tr==1): 116 / 851
+Figure(600x600)
+involved excitation labels: [2]
+
+[z_dmg mahal] threshold (baseline p95): 13600.404296875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 61   3]
+ [514  11]]
+TN=61  FP=3  FN=514  TP=11
+Metrics (positive class = damaged):
+True negative rate          : 0.9531
+True positive rate          : 0.0210
+Accuracy          : 0.1222
+Balanced Accuracy          : 0.4870
+
+[z_ndmg mahal] threshold (baseline p95): 778.7977294921875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 62   2]
+ [482  43]]
+TN=62  FP=2  FN=482  TP=43
+Metrics (positive class = damaged):
+True negative rate          : 0.9688
+True positive rate          : 0.0819
+Accuracy          : 0.1783
+Balanced Accuracy          : 0.5253
+	 ==========================
+involved excitation labels: [1]
+[z_dmg] baseline count (dmg_tr==1): 108 / 880
+[z_ndmg] baseline count (dmg_tr==1): 108 / 880
+involved excitation labels: [1]
+
+[z_dmg mahal] threshold (baseline p95): 14786.4931640625
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 68   4]
+ [380 108]]
+TN=68  FP=4  FN=380  TP=108
+Metrics (positive class = damaged):
+True negative rate          : 0.9444
+True positive rate          : 0.2213
+Accuracy          : 0.3143
+Balanced Accuracy          : 0.5829
+
+[z_ndmg mahal] threshold (baseline p95): 630.77392578125
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 66   6]
+ [410  78]]
+TN=66  FP=6  FN=410  TP=78
+Metrics (positive class = damaged):
+True negative rate          : 0.9167
+True positive rate          : 0.1598
+Accuracy          : 0.2571
+Balanced Accuracy          : 0.5383
+	 ==========================
+involved excitation labels: [2]
+[z_dmg] baseline count (dmg_tr==1): 116 / 851
+[z_ndmg] baseline count (dmg_tr==1): 116 / 851
+involved excitation labels: [2]
+
+[z_dmg mahal] threshold (baseline p95): 13600.404296875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 61   3]
+ [514  11]]
+TN=61  FP=3  FN=514  TP=11
+Metrics (positive class = damaged):
+True negative rate          : 0.9531
+True positive rate          : 0.0210
+Accuracy          : 0.1222
+Balanced Accuracy          : 0.4870
+
+[z_ndmg mahal] threshold (baseline p95): 778.7977294921875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 62   2]
+ [482  43]]
+TN=62  FP=2  FN=482  TP=43
+Metrics (positive class = damaged):
+True negative rate          : 0.9688
+True positive rate          : 0.0819
+Accuracy          : 0.1783
+Balanced Accuracy          : 0.5253
+	 ==========================
+involved excitation labels: [3]
+[z_dmg] baseline count (dmg_tr==1): 96 / 861
+[z_ndmg] baseline count (dmg_tr==1): 96 / 861
+involved excitation labels: [3]
+
+[z_dmg mahal] threshold (baseline p95): 8517.935546875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 83   1]
+ [491   4]]
+TN=83  FP=1  FN=491  TP=4
+Metrics (positive class = damaged):
+True negative rate          : 0.9881
+True positive rate          : 0.0081
+Accuracy          : 0.1503
+Balanced Accuracy          : 0.4981
+
+[z_ndmg mahal] threshold (baseline p95): 2117.28857421875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 80   4]
+ [462  33]]
+TN=80  FP=4  FN=462  TP=33
+Metrics (positive class = damaged):
+True negative rate          : 0.9524
+True positive rate          : 0.0667
+Accuracy          : 0.1952
+Balanced Accuracy          : 0.5095
+	 ==========================
+involved excitation labels: [1, 2, 3]
+[z_dmg] baseline count (dmg_tr==1): 320 / 2592
+[z_ndmg] baseline count (dmg_tr==1): 320 / 2592
+involved excitation labels: [1, 2, 3]
+
+[z_dmg mahal] threshold (baseline p95): 18508.435546875
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 209   11]
+ [1440   68]]
+TN=209  FP=11  FN=1440  TP=68
+Metrics (positive class = damaged):
+True negative rate          : 0.9500
+True positive rate          : 0.0451
+Accuracy          : 0.1603
+Balanced Accuracy          : 0.4975
+
+[z_ndmg mahal] threshold (baseline p95): 1489.66064453125
+Confusion matrix (rows=true [undamaged, damaged], cols=pred [undamaged, damaged]):
+[[ 211    9]
+ [1402  106]]
+TN=211  FP=9  FN=1402  TP=106
+Metrics (positive class = damaged):
+True negative rate          : 0.9591
+True positive rate          : 0.0703
+Accuracy          : 0.1834
+Balanced Accuracy          : 0.5147
+model_v2_1.pt
+z_dmg
+68	4	61	3	83	1	209	11
+380	108	514	11	491	4	1440	68
+z_ndmg
+66	6	62	2	80	4	211	9
+410	78	482	43	462	33	1402	106

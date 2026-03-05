@@ -1,0 +1,16 @@
+# core
+numpy==2.2.6
+scipy==1.15.3
+
+# pytorch
+torch==2.9.1+cu126
+torchvision==0.24.1+cu126
+torchaudio==2.9.1+cu126
+
+# ML utilities
+scikit-learn==1.7.2
+tqdm==4.67.1
+
+# plotting
+matplotlib==3.10.8
+seaborn==0.13.2
