@@ -42,6 +42,7 @@ SSRL/
 ├── results/
 │   └── timeseries_MCC5/
 └── requirements.txt
+```text
 
 ## Demonstratiev Data
 Download the processed MCC5 dataset from: https://drive.google.com/file/d/1vgFMbcAKVf_FN38JXinLZzP-fRx1NbYa/view?usp=drive_link
