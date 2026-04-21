@@ -21,27 +21,6 @@ The model is trained with:
 
 Damage identification is then performed using **Mahalanobis distance** in the learned latent space.
 
-## Repository structure
-
-SSRL/
-├── models/
-│   ├── autoencoder.py
-│   └── mlp.py
-├── scripts/
-│   ├── timeseries_MCC5/
-│   │   ├── configs.py
-│   │   ├── train.py
-│   │   ├── test_v2.py
-│   │   ├── train_plot_loss.py
-│   │   └── run_sweep_all.py
-│   └── artificial_features_MCC5/
-│       ├── configs.py
-│       └── evaluation_v1.py
-├── utils/
-├── results/
-│   └── timeseries_MCC5/
-└── requirements.txt
-
 ## Demonstratiev Data
 Download the processed MCC5 dataset from: https://drive.google.com/file/d/1vgFMbcAKVf_FN38JXinLZzP-fRx1NbYa/view?usp=drive_link
 Then place the file here: data/MCC5.pt
